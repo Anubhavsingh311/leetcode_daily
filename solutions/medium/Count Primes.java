@@ -3,17 +3,17 @@
             // Language: Java
             // Link: https://leetcode.com/problems/count-primes/
 
-        for (int i = 2; i * i < n; i++) {
-        Arrays.fill(isprime, true);
+class Solution {
 
-        boolean[] isprime = new boolean[n];
+    public int countPrimes(int n) {
+
+        if (n <= 1) {
+            return 0;
+        }
 
         int count = 0;
 
-            return 0;
-        }
-        if (n <= 1) {
-    public int countPrimes(int n) {
+        boolean[] isprime = new boolean[n];
 
-
-class Solution {
+        Arrays.fill(isprime, true);
+        for (int i = 2; i * i < n; i++) {
