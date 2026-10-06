@@ -1,0 +1,8 @@
+// Title: Combine Two Tables
+            // Difficulty: Easy
+            // Language: Oracle
+            // Link: https://leetcode.com/problems/combine-two-tables/
+
+/* Write your PL/SQL query statement below */
+Select firstName,lastName,city,state from Person Left Join Address On Person.
+personId=Address.personId order by Person.personId;
