@@ -1,0 +1,7 @@
+// Title: Classes With at Least 5 Students
+            // Difficulty: Easy
+            // Language: MySQL
+            // Link: https://leetcode.com/problems/classes-with-at-least-5-students/
+
+# Write your MySQL query statement below
+select class from Courses group by class having count(student) >=5;
