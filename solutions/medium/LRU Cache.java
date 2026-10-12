@@ -3,22 +3,22 @@
             // Language: Java
             // Link: https://leetcode.com/problems/lru-cache/
 
-    private Map<Integer, Node> cache;
-    private int cap;
+class Node {
+    int key;
+    int val;
+    Node prev;
+    Node next;
+
+    public Node(int key, int val) {
+        this.key = key;
+        this.val = val;
+        this.prev = null;
+        this.next = null;
+    }
+}
+
 
 class LRUCache {
 
-
-}
-    }
-        this.next = null;
-        this.prev = null;
-        this.val = val;
-        this.key = key;
-    public Node(int key, int val) {
-
-    Node next;
-    Node prev;
-    int val;
-class Node {
-    int key;
+    private int cap;
+    private Map<Integer, Node> cache;
